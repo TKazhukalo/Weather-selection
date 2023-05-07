@@ -52,7 +52,7 @@ async function getWeather(arr) {
      const params = new URLSearchParams({
     key: API_KEY,
     q: city,
-    lang: 'uk'
+    lang: 'en'
      });
     const resp = await fetch(`${BASE_URL}/current.json?${params}`);
      if (!resp.ok) {
